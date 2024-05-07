@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vecindario</title>
+</head>
+<body>
+    <h1> Mis Vecindarios - coleccion neighborhoods</h1>
+
+    {%for vecindario in vecindarios%}
+
+        <small>Nombre Vecindario = </small>
+        <label>{{vecindario.name}}</label><br>
+        
+        
+
+        <small>Tipo Vecinadrio = </small>
+        <label>{{vecindario.geometry.type}}</label><br>
+        <br>
+
+    {%endfor%}
+    
+</body>
+</html>

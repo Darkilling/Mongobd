@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MongoDB</title>
+    </head>
+    <body>
+        <h1>Usando Mongo - Python - Html con Flask</h1>
+        {% for resultado in restaurantes %}
+            <ul>
+                <li>
+                    <small>Id del resturante</small>
+                    <label>{{resultado.restaurant_id}}</label><br>
+
+                    <small>Nombre del restaurante</small>
+                    <label>{{resultado.name}}</label><br>
+
+                    <small>Comuna del restaurante</small>
+                    <label>{{resultado.borough}}</label><br>
+
+                    <small>Tipo de cocina</small>
+                    <label>{{resultado.cuisine}}</label>  <br>                
+                </li>
+            </ul>
+        {%endfor%}
+    </body>
+</html>
